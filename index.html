@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navigation Bar with Search Box</title>
+    <title>Fogo</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
        <!-- font awsome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -44,7 +45,7 @@
           
           <div class="container">
             <!-- First Child Div -->
-            <div class="text-content">
+            <div data-aos="zoom-in" class="text-content">
               <h1>Delicious Pizza</h1>
               <h3>Freshly Baked</h3>
               <p>Experience the authentic taste of Italian pizza with fresh ingredients and irresistible flavors!</p>
@@ -69,12 +70,12 @@
 <!-- ==================fevorts================ -->
           
     <section id="offers">
-            <h1>Our special Products</h1>
+            <h1 data-aos="zoom-in">Our special Products</h1>
             <h5>Experience the taste of perfection with our specially crafted pizzas, made just for you!!</h5>
             <div class="container">
               
-              <div class="work-list">
-                  <div class="work">
+              <div   class="work-list">
+                  <div data-aos="fade-right" class="work">
                       <img src="./images/Peperoni-Pizza.jpeg" alt="">
                       <div class="layer">
                           <h2>Peperoni-Pizza</h2>
@@ -82,7 +83,7 @@
                           <button class="fevorts-products-button">Order Now</button>
                         </div>
                   </div>
-                  <div class="work">
+                  <div data-aos="fade-down" class="work">
                       <img src="./images/BBQChickenPizza.jpeg">
                       <div class="layer">
                           <h2>BBQ Chicken Pizza</h2>
@@ -91,8 +92,8 @@
                         </div>
                   </div>
 
-                  <div class="work">
-                    <img src="./images/meat-pizza.jpeg">
+                  <div data-aos="fade-left" class="work">
+                    <img  src="./images/meat-pizza.jpeg">
                     <div class="layer">
                         <h2>Meat Pizaa</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisiciLorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -109,8 +110,8 @@
     <section id="care">
             <h1 data-aos="zoom-in">ENJOY AND TAKE <br> CARE OF YOUR HELTH</h1>
             <div class="container">
-                <div class="care-img">
-                    <img src="./images/pizza-2.png" alt="">
+                <div  data-aos="fade-right" class="care-img">
+                    <img  src="./images/pizza-2.png" alt="">
                 </div>
          
                    <div data-aos="zoom-in-left" class="care-data">
@@ -118,22 +119,22 @@
          
                     <div class="care-items">
                         <i class="fa-solid fa-fire-flame-curved"></i>
-                        <p>Crisped to perfection in natural, vegetable oil because we care in every bite!</p>
+                        <p>Our pizzas are baked to golden perfection, with fresh ingredients and authentic flavors in every bite.</p>
                     </div>
          
                     <div class="care-items">
                         <i class="fa-solid fa-heart-pulse"></i>
-                        <p>From farm to flavor our potatoes are cooked simply, with no processing or preservatives</p>
+                        <p>Every slice of our pizza is a perfect harmony of crispy crust, gooey cheese, and delicious toppings</p>
                     </div>
          
                     <div class="care-items">
                         <i class="fa-brands fa-pagelines "></i>
-                        <p>Only 100% organic, farm-grown potatoes—harvested with care to make every bite natural and delicious.</p>
+                        <p>Handcrafted with love, our pizzas bring the authentic taste of Italy to your table.</p>
                     </div>
          
                     <div class="care-items">
                         <i class="fa-solid fa-hands-holding-child"></i>
-                        <p>Enjoy a snack with fewer calories and less fat—crafted for better health in every bite!</p>
+                        <p>Fast food, redefined with fresh ingredients, bold flavors, and a taste that keeps you coming back</p>
                     </div>
          
                 </div>
@@ -145,7 +146,7 @@
         <div class="container2">
          <h1 data-aos="zoom-in">BEST SELLING <br> PRODUCTS</h1>
          <div class="product-container">
-             <div class="product-item">
+             <div data-aos="flip-left" class="product-item">
                  <img src="images/pizza-1.png" alt="">
                  <div class="product-buy">
               
@@ -155,7 +156,7 @@
                    <i class="fa-solid fa-cart-shopping"></i>
                  </div>
              </div>
-             <div class="product-item">
+             <div data-aos="flip-left" class="product-item">
                  <img src="./images/donuts.png" alt="">
                  <div class="product-buy">
               
@@ -165,7 +166,7 @@
                  <i class="fa-solid fa-cart-shopping"></i>
                </div>
              </div>
-             <div class="product-item">
+             <div data-aos="flip-left" class="product-item">
                  <img src="./images/sandwich.png" alt="">
                  <div class="product-buy">
               
@@ -175,7 +176,7 @@
                  <i class="fa-solid fa-cart-shopping"></i>
                </div>
              </div>
-             <div class="product-item">
+             <div data-aos="flip-left" class="product-item">
               <img src="./images/salad.png" alt="">
               <div class="product-buy">
            
@@ -185,7 +186,7 @@
               <i class="fa-solid fa-cart-shopping"></i>
             </div>
           </div>
-          <div class="product-item">
+          <div data-aos="flip-left" class="product-item">
               <img src="./images/burger.png" alt="">
               <div class="product-buy">
            
@@ -195,7 +196,7 @@
               <i class="fa-solid fa-cart-shopping"></i>
             </div>
           </div>
-          <div class="product-item">
+          <div data-aos="flip-left" class="product-item">
             <img src="./images/french fries.png" alt="">
             <div class="product-buy">
          
@@ -268,9 +269,23 @@
            </div>
        </div>
      </section> 
+
+<!-- =============footer================ -->
+<div class="footer">
+  <h1>FOGO</h1>
+  <div class="footer-container">
+      <h3>Terms & Agreements</h3>
+      <h3>© All Rights Reserved By subin pp</h3>
+      <h3>Privacy Policy</h3>
+  </div>
+</div>
 </body>
 
 
 <script src="script.js" defer></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<script>
+  AOS.init();
+</script>
 </html>
