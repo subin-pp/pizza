@@ -101,3 +101,23 @@ button_submit.addEventListener("click", () => {
 
 
 
+// Function to check if the element is in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return rect.top >= 0 && rect.bottom <= window.innerHeight;
+}
+
+// Apply the animation when scrolling
+function animateOnScroll() {
+  const careImg = document.querySelector('.care-img');
+  if (isInViewport(careImg)) {
+    careImg.classList.add('scrolled');
+  }
+}
+
+// Listen to the scroll event
+window.addEventListener('scroll', animateOnScroll);
+
+
+
+

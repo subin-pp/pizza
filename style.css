@@ -9,11 +9,9 @@
 html {
   scroll-behavior: smooth; 
 }
-body {
-  
-  overflow-clip-margin: hidden;
-}
+
 #home {
+  overflow: hidden;
   background:#e74c3c;
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,6 +52,7 @@ a {
   font-weight: 600;
   font-family: "DynaPuff", system-ui;
   letter-spacing: 2px;
+  
 }
 .nav ul {
   border: solid 1px rgba(255, 255, 255, 0.3); 
@@ -208,7 +207,7 @@ a {
 
   .nav .logo {
     margin: 0 auto;
-    text-align: center;
+    padding-left: 20px;
   }
 
   .nav .navOpenBtn,
@@ -374,6 +373,7 @@ button:hover {
 }
 /* ====================offers====================== */
 #offers{
+  overflow: hidden;
   padding-top: 30px;
   width: 100%;
   height: auto;
@@ -514,6 +514,7 @@ button:hover {
 /* ===============care =============== */
 
 #care {
+  overflow: hidden;
   padding: 40px 20px;
   text-align: center;
   background-color: #fce3cb;
@@ -539,7 +540,14 @@ button:hover {
   flex: 1 1 40%;
   max-width: 400px;
   text-align: center;
+  transform: translateX(-100%); 
+  transition: all 1.3s ease-in-out;
 }
+
+.care-img.scrolled {
+  transform: translateX(0); 
+}
+
 
 .care-img img {
   width: 100%;
